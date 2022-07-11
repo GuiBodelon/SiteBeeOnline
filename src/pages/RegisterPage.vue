@@ -1,0 +1,3 @@
+<template>
+  Teste cadastro
+</template>
