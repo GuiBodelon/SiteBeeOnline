@@ -25,11 +25,11 @@
           <div class="col-12 flex items-center justify-center text-bold q-pb-sm text-white">Oi, eu sou a Bee
             <q-img class="q-ml-sm" src="/media/honeybee.png" style="max-width:30px" />
           </div>
-          <div class=" col-12 text-center q-pb-sm text-white" style="font-weight:900;font-size:6em;">Bem vindo a
+          <div class=" col-12 text-center q-pb-sm text-white title" style="font-weight:900;font-size:6em;">Bem vindo a
             Colmeia!
           </div>
           <br class="col-12">
-          <div class="text-center text-white" style="font-size:1.2em">
+          <div class="text-center text-white subtitle" style="font-size:1.2em">
             Independente do produto oferecido, a <strong>publicidade</strong> mantém a comunicação
             viva e dinâmica,<br> possuindo o poder de <strong>impulsionar</strong>, influenciar e fazer com que
             <strong>seu negócio</strong><br>
@@ -390,6 +390,17 @@ export default defineComponent({
 
     &-margin {
       min-height: 130px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 4em !important;
+    }
+
+    .subtitle {
+      font-size: 1em !important;
+      max-width: 90%;
     }
   }
 }
