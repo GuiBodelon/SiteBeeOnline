@@ -20,39 +20,39 @@
         </q-toolbar>
       </q-header>
       <section class="sessaoHome">
-        <div style="min-width:100vh;min-height:300px"></div>
+        <div class="sessaoHome-margin"></div>
         <div class="row justify-center items-center">
           <div class="col-12 flex items-center justify-center text-bold q-pb-sm text-white">Oi, eu sou a Bee
             <q-img class="q-ml-sm" src="/media/honeybee.png" style="max-width:30px" />
           </div>
-          <div class=" col-12 text-center q-pb-sm text-white" style="font-weight:900;font-size:6em;">Bem vindo a
+          <div class=" col-12 text-center q-pb-sm text-white title" style="font-weight:900;font-size:6em;">Bem vindo a
             Colmeia!
           </div>
           <br class="col-12">
-          <div class="text-center text-white" style="font-size:1.2em">
+          <div class="text-center text-white subtitle" style="font-size:1.2em">
             Independente do produto oferecido, a <strong>publicidade</strong> mantém a comunicação
             viva e dinâmica,<br> possuindo o poder de <strong>impulsionar</strong>, influenciar e fazer com que
             <strong>seu negócio</strong><br>
             alcance uma escala mundial, <strong>através da internet.</strong>
           </div>
           <div class="col-12 flex justify-center q-gutter-x-xl" style="padding-top:50px">
-            <q-btn color="white" :ripple="{ color: 'amber' }" no-caps>
+            <q-btn color="white" class="q-mb-sm" :ripple="{ color: 'amber' }" no-caps>
               <div class="text-bold text-black">Fale Conosco</div>
             </q-btn>
-            <q-btn class="venhaParaColmeiaButton" text-color="black" icon-right="chevron_right"
+            <q-btn class="venhaParaColmeiaButton q-mb-sm" text-color="black" icon-right="chevron_right"
               :ripple="{ color: 'amber' }" no-caps>
               <div class="text-bold">Venha para a Colméia</div>
             </q-btn>
-            <q-btn color="white" :ripple="{ color: 'amber' }" no-caps>
+            <q-btn color="white" class="q-mb-sm" :ripple="{ color: 'amber' }" no-caps>
               <div class="text-bold text-black">Veja o Porfólio</div>
             </q-btn>
           </div>
         </div>
       </section>
       <section class="sessaoServicos">
-        <div class="row justify-center" style="padding-top: 180px">
+        <div class="row justify-center sessaoServicos-container">
           <div class="col-12 text-center text-h4 text-white">Nossos Serviços</div>
-          <q-img src="/media/intercessao1.png" style="position: absolute;top:25%;max-width:60px;" />
+          <q-img src="/media/intercessao1.png" class="sessaoServicos-container--image" style="position: absolute;top:25%;max-width:60px;" />
           <q-tabs v-model="tab" class="bg-none tabsServicos q-mt-xl" align="justify"
             style="min-width:80vw;min-height: 110px;">
             <div class="flex justify-around full-width">
@@ -90,10 +90,10 @@
             <q-tab-panel name="publicidade">
               <div class="row q-mt-xl">
                 <div class="col-7 col-md-7">
-                  <q-img src="/media/panelPublicidade.png" style="width:700px" />
+                  <q-img src="/media/panelPublicidade.png" class="sessaoServicos-container--image-text" />
                 </div>
-                <div class="col-5 col-md-5">
-                  <q-img src="/media/imgPublicidade.png" style="width:500px" />
+                <div class="col-5 col-md-5 relative-position">
+                  <q-img src="/media/imgPublicidade.png" class="sessaoServicos-container--image-pub" style="width:500px;" />
                 </div>
                 <div class="col-4 col-md-4">
                   <q-btn color="secondary" dense no-caps style="position: absolute;bottom:450px;left:100px">
@@ -144,10 +144,10 @@
             <q-tab-panel name="marketing">
               <div class="row q-mt-xl">
                 <div class="col-7 col-md-7">
-                  <q-img src="/media/panelMarketing.png" style="width:700px" />
+                  <q-img src="/media/panelMarketing.png" class="sessaoServicos-container--image-text" />
                 </div>
-                <div class="col-5 col-md-5">
-                  <q-img src="/media/imgMarketing.png" style="width:500px" />
+                <div class="col-5 col-md-5 relative-position">
+                  <q-img src="/media/imgMarketing.png" class="sessaoServicos-container--image-pub" style="width:500px" />
                 </div>
                 <div class="col-4 col-md-4">
                   <q-btn color="secondary" dense no-caps style="position: absolute;bottom:450px;left:100px">
@@ -195,10 +195,10 @@
             <q-tab-panel name="webDev">
               <div class="row q-mt-xl">
                 <div class="col-7 col-md-7">
-                  <q-img src="/media/panelWebDev.png" style="width:700px" />
+                  <q-img src="/media/panelWebDev.png" class="sessaoServicos-container--image-text" />
                 </div>
-                <div class="col-5 col-md-5">
-                  <q-img src="/media/imgWebDev.png" style="width:500px" />
+                <div class="col-5 col-md-5 relative-position">
+                  <q-img src="/media/imgWebDev.png" class="sessaoServicos-container--image-pub" style="width:500px" />
                 </div>
                 <div class="col-4 col-md-4">
                   <q-btn color="secondary" dense no-caps style="position: absolute;bottom:450px;left:100px">
@@ -245,10 +245,10 @@
             <q-tab-panel name="relacoesPublicas">
               <div class="row q-mt-xl">
                 <div class="col-7 col-md-7">
-                  <q-img src="/media/panelRelacPub.png" style="width:700px" />
+                  <q-img src="/media/panelRelacPub.png" class="sessaoServicos-container--image-text" />
                 </div>
                 <div class="col-5 col-md-5 col-sm-6">
-                  <q-img src="/media/imgRelacPub.png" style="width:500px" />
+                  <q-img src="/media/imgRelacPub.png" class="sessaoServicos-container--image-imgRelacPub" />
                 </div>
                 <div class="col-4 col-md-4">
                   <q-btn color="secondary" dense no-caps style="position: absolute;bottom:450px;left:100px">
@@ -379,11 +379,79 @@ export default defineComponent({
   background-repeat: no-repeat;
   min-height: 100vh;
   max-height: 100vh;
+
+  &-margin {
+    min-width: 100%;
+    min-height: 300px;
+  }
+
+  @media (max-width: 769px) {
+    max-height: none;
+
+    &-margin {
+      min-height: 130px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 4em !important;
+    }
+
+    .subtitle {
+      font-size: 1em !important;
+      max-width: 90%;
+    }
+  }
 }
 
 .sessaoServicos {
   background: #121214;
   min-height: 100vh;
+
+  &-container {
+    padding-top: 180px;
+  }
+
+  &-container--image-text {
+    width: 700px;
+  }
+
+  @media (max-width: 769px) {
+    &-container {
+      padding-top: 50px;
+    }
+
+    &-container--image {
+      display: none;
+    }
+
+    &-container--image-pub {
+      width: 300px !important;
+      position: absolute;
+      bottom: -100px;
+    }
+
+    &-container--image-imgRelacPub {
+      width: 500px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &-container--image-text {
+      width: 350px;
+    }
+
+    &-container--image-pub {
+      width: 150px !important;
+      bottom: -40px;
+    }
+
+    &-container--image-imgRelacPub {
+      width: 150px;
+      bottom: -80px;
+    }
+  }
 }
 
 .sessaoColmeia {
